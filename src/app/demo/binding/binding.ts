@@ -1,4 +1,4 @@
-import { DatePipe, UpperCasePipe } from '@angular/common';
+
 import { Component, signal, WritableSignal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { FrDatePipe } from '../../pipes/fr-date-pipe';
@@ -12,6 +12,8 @@ import { FrDatePipe } from '../../pipes/fr-date-pipe';
   styleUrl: './binding.scss'
 })
 export class Binding {
+
+  isDisabled = signal(true);
 
   date = signal(new Date())
 

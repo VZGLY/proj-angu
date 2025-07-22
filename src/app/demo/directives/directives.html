@@ -1,0 +1,17 @@
+<button (click)="setVisibility()">Visibility</button>
+@if (visible()) 
+{
+    <div>
+        <p [ngStyle]="correctStyle()">Visible</p>
+    </div> 
+}
+@else {
+    <div>
+        <p [ngStyle]="badStyle()">Non Visible</p>
+    </div> 
+}
+
+@for (element of maList(); track $index) 
+{
+    <p>{{$index}} - {{element}}</p>
+}

@@ -1,5 +1,5 @@
 <br>
-
+<img src="/img/blagueur.jpg" alt="test">
 <br>
 
 <p>Date = {{date() | frDate}}</p>
@@ -9,6 +9,6 @@
 <input type="text" [(ngModel)]="twoWay" >
 <p>Binding : {{twoWay()}}</p>
 
-<button (click)="maMethode()">ChangeValue</button>
+<button [disabled]="isDisabled()" (click)="maMethode()">ChangeValue</button>
 
 <button (click)="hide()">Hide</button>
