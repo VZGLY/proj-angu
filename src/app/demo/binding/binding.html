@@ -1,0 +1,14 @@
+<br>
+
+<br>
+
+<p>Date = {{date() | frDate}}</p>
+
+<p [hidden]="hideValue()">variable : {{maVar()}}</p>
+
+<input type="text" [(ngModel)]="twoWay" >
+<p>Binding : {{twoWay()}}</p>
+
+<button (click)="maMethode()">ChangeValue</button>
+
+<button (click)="hide()">Hide</button>
