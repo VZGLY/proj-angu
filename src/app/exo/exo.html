@@ -1,7 +1,8 @@
 <br>
 
-<a [routerLink]="['chrono']">Chrono</a>
-
-<br>
+@for (item of liens; track $index) 
+{
+    <a [hidden]="!item.isVisible" [routerLink]="item.url">{{item.name}}</a> &nbsp;
+}
 
 <router-outlet></router-outlet>

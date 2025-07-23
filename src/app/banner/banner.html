@@ -1,5 +1,4 @@
-<a [routerLink]="['/demo']">Demo</a>
-<br>
-
-<a [routerLink]="['/exo']">Exo</a>
-
+@for (item of liens; track $index) 
+{
+    <a [hidden]="!item.isVisible" [routerLink]="item.url">{{item.name}}</a> &nbsp;
+}

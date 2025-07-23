@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
+import { Link } from '../models/Link';
 
 @Component({
   selector: 'app-demo',
@@ -8,5 +9,8 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   styleUrl: './demo.scss'
 })
 export class Demo {
-
+  liens : Link[] = [
+    {name : 'Binding', url : ['binding'], isVisible : true},
+    {name : 'Directives', url : ['directives'], isVisible : true}
+  ]
 }
