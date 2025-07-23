@@ -4,6 +4,7 @@ import { Exo } from './exo/exo';
 import { Binding } from './demo/binding/binding';
 import { Chrono } from './exo/chrono/chrono';
 import { Directives } from './demo/directives/directives';
+import { Parent } from './demo/input/parent/parent';
 
 export const routes: Routes = [
     {
@@ -13,6 +14,9 @@ export const routes: Routes = [
             },
             {
                 path : 'directives', component: Directives
+            },
+            {
+                path : 'input', component: Parent
             }
         ]
     },

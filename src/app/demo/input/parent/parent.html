@@ -1,0 +1,5 @@
+<p>parent works !</p>
+
+<p>Enfant Valeur : {{valeurEnfant()}}</p>
+
+<app-enfant (enfantOutput)="EvenementEnfant($event)" [valeurDuParent]="valeurParent">Content à l'interieur des balises</app-enfant>

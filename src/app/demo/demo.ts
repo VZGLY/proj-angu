@@ -11,6 +11,7 @@ import { Link } from '../models/Link';
 export class Demo {
   liens : Link[] = [
     {name : 'Binding', url : ['binding'], isVisible : true},
-    {name : 'Directives', url : ['directives'], isVisible : true}
+    {name : 'Directives', url : ['directives'], isVisible : true},
+    {name : 'Input', url : ['input'], isVisible : true}
   ]
 }
