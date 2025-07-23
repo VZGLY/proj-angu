@@ -4,4 +4,4 @@
 
 <button (click)="ajouter()">Ajouter</button>
 
-<app-tableau [maListe]="produits()"></app-tableau>
+<app-tableau (deleteOutput)="deleteElem($event)" [maListe]="produits()"></app-tableau>

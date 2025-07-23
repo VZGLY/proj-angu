@@ -23,4 +23,9 @@ export class ParentTableau {
     this.nouveauProduit.set("");
   }
 
+  deleteElem(id : number){
+
+    this.produits.set(this.produits().filter((_, i) => i !== id))
+    
+  }
 }

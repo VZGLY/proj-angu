@@ -1,4 +1,4 @@
 @for (item of maListe(); track $index) 
 {
-    <p>{{item}}</p>
+    <p>{{item}}</p> <button (click)="deletePressed($index)">Delete</button>
 }

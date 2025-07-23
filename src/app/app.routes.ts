@@ -6,6 +6,7 @@ import { Chrono } from './exo/chrono/chrono';
 import { Directives } from './demo/directives/directives';
 import { Parent } from './demo/input/parent/parent';
 import { ParentTableau } from './exo/courses/parent-tableau/parent-tableau';
+import { Service } from './demo/service/service';
 
 export const routes: Routes = [
     {
@@ -18,6 +19,9 @@ export const routes: Routes = [
             },
             {
                 path : 'input', component: Parent
+            },
+            {
+                path : 'service', component: Service
             }
         ]
     },
