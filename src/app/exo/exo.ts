@@ -10,6 +10,7 @@ import { Link } from '../models/Link';
 })
 export class Exo {
  liens : Link[] = [
-  {name : 'chrono', url : ['chrono'], isVisible : true}
+  {name : 'chrono', url : ['chrono'], isVisible : true},
+  {name : 'tableau', url : ['tableau'], isVisible : true}
  ]
 }
