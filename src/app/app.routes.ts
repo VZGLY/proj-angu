@@ -9,6 +9,10 @@ import { ParentTableau } from './exo/courses/parent-tableau/parent-tableau';
 import { Service } from './demo/service/service';
 import { Formulaire } from './demo/formulaire/formulaire';
 import { Routing } from './demo/routing/routing';
+import { Personnes } from './exo/personnes/personnes';
+import { Details } from './exo/personnes/details/details';
+import { Create } from './exo/personnes/create/create';
+import { Http } from './demo/http/http';
 
 export const routes: Routes = [
     {
@@ -35,6 +39,9 @@ export const routes: Routes = [
                 path : 'routing', component: Routing
             },
             {
+                path : 'http', component: Http
+            },
+            {
                 path : "**", redirectTo : "binding"
             }
         ]
@@ -46,6 +53,15 @@ export const routes: Routes = [
             },
             {
                 path : 'tableau', component : ParentTableau
+            },
+            {
+                path : 'personnes', component : Personnes
+            },
+            {
+                path : 'personne/create', component : Create
+            },
+            {
+                path : 'personne/:id', component : Details
             }
         ]
     },

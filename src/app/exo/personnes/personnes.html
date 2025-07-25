@@ -1,0 +1,9 @@
+<br>
+
+<button (click)="allerACreation()">Ajouter</button>
+
+@for (item of this.personnes(); track $index) 
+{
+    <p>{{$index + 1}} | {{item.name}} - {{item.age}} ans</p> 
+    <button (click)="allerAuDetail($index)">Voir</button>
+}

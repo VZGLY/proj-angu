@@ -1,0 +1,9 @@
+<br>
+
+<form [formGroup]="formGroup">
+    <input placeholder="name" type="text" formControlName="name">
+    <br>
+    <input placeholder="age" type="number" formControlName="age">
+    <br>
+    <input (click)="envoyer()" type="button" value="envoyer">
+</form>

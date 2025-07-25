@@ -15,6 +15,7 @@ export class Demo {
     {name : 'Input', url : ['input'], isVisible : true},
     {name : 'Service', url : ['service'], isVisible : true},
     {name : 'Formulaire', url : ['formulaire'], isVisible : true},
-    {name : 'Routing', url : ['routing'], isVisible : true}
+    {name : 'Routing', url : ['routing'], isVisible : true},
+    {name : 'Http', url: ['http'], isVisible: true}
   ]
 }

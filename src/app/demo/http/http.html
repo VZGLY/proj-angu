@@ -1,0 +1,12 @@
+
+<br>
+
+<input type="text" [(ngModel)]="idSelectionne">
+<br>
+<button (click)="cherchePokemon()" >Rechercher</button>
+
+@if (poke()) 
+{
+    <p>{{this.poke()?.name}} - {{this.poke()?.id}}</p>
+    <img src="{{this.poke()?.sprites?.front_default}}" alt="">
+}
