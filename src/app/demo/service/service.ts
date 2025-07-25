@@ -14,5 +14,4 @@ export class Service {
   resetServiceValue(){
     this._demoService.serviceValeur.set("Valeur réinitialisée")
   }
-
 }

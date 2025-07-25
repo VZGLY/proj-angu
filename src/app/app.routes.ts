@@ -7,6 +7,8 @@ import { Directives } from './demo/directives/directives';
 import { Parent } from './demo/input/parent/parent';
 import { ParentTableau } from './exo/courses/parent-tableau/parent-tableau';
 import { Service } from './demo/service/service';
+import { Formulaire } from './demo/formulaire/formulaire';
+import { Routing } from './demo/routing/routing';
 
 export const routes: Routes = [
     {
@@ -22,6 +24,18 @@ export const routes: Routes = [
             },
             {
                 path : 'service', component: Service
+            },
+            {
+                path : 'formulaire', component: Formulaire
+            },
+            {
+                path : 'routing/:id', component: Routing
+            },
+            {
+                path : 'routing', component: Routing
+            },
+            {
+                path : "**", redirectTo : "binding"
             }
         ]
     },
@@ -34,5 +48,6 @@ export const routes: Routes = [
                 path : 'tableau', component : ParentTableau
             }
         ]
-    }
+    },
+    {path : "**", redirectTo : "demo"}
 ];

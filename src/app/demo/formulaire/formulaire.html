@@ -1,0 +1,42 @@
+<h4>------------------</h4>
+<h5>Form Control</h5>
+<h4>------------------</h4>
+
+<form>
+    <input type="text" [formControl]="control">
+    <input type="button" (click)="validerControl()" value="Valider">
+</form>
+
+<p>{{controlMessage()}}</p>
+
+<h4>------------------</h4>
+<h5>Form Group</h5>
+<h4>------------------</h4>
+
+<form [formGroup]="formGroup">
+    <label for="email">Email</label>
+    <input id="email" type="email" formControlName="email">
+    <br>
+    <input placeholder="Password" type="password" formControlName="password">
+    <br>
+    <input type="button" (click)="validerGroup()" value="Valider">
+</form>
+
+<p>{{groupMessage()}}</p>
+
+<h4>------------------</h4>
+<h5>Form Array</h5>
+<h4>------------------</h4>
+
+<form [formGroup]="formGroupArray" >
+    <input placeholder="name" type="text" formControlName="name">
+    <br>
+    <div formArrayName="members">
+        <button (click)="ajouterControl()">Ajouter</button>
+        <div *ngFor="let c of recupererArray().controls; let i = index">
+            <p>{{i}} <input type="text" [formControlName]="i"></p>
+            <button (click)="retirerControl(i)" >Retirer</button>
+        </div>
+    </div>
+    
+</form>
